@@ -18,4 +18,9 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Person(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
 }
