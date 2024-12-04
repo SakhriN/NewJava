@@ -32,18 +32,9 @@ private int count = 1;
     enclosure.add(animal);
 }
 
-public void removeAnimal(int id) {
-    for (Animal animal : enclosure) {
-        if (animal.getId() == id) {
-            enclosure.remove(animal);
-            break;
-        }
-    }
-}
-
 public void ListAnimals() {
     for (Animal animal : enclosure) {
-        System.out.println(animal);
+        animal.getDetails();
     }
 }
 
