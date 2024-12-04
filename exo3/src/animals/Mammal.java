@@ -9,7 +9,7 @@ public class Mammal extends Animal {
 
     @Override
     public String getDetails() {
-        return getName() +getSpecies() + getId();
+        return getName() + getSpecies() + getId();
     }
 
     @Override
