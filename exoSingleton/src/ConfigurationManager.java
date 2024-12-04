@@ -5,9 +5,7 @@ public class ConfigurationManager {
     String port;
     String nom;
 
-
     private static ConfigurationManager instance;
-
 
     private ConfigurationManager(String hostname, String port, String nom) {
         this.hostname = hostname;
@@ -16,12 +14,8 @@ public class ConfigurationManager {
     }
 
     public static synchronized ConfigurationManager getInstance(Map<String,String> map) {
-        String hostname = map.get("db.host");
-        String port = map.get("db.port");
-        String nom = map.get("app.name");
-
         if (instance == null) {
-            instance = new ConfigurationManager(hostname, port, nom);
+            instance = new ConfigurationManager(map.get("db.host"), map.get("db.port"), map.get("app.name"));
         }
         return instance;
     }

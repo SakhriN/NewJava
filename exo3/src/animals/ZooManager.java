@@ -13,22 +13,22 @@ public class ZooManager implements ZooAction {
     public ZooManager(){
     }
 
-public Bird CreateBird(String name,String species){
-    return new Bird(name,species);
-}
+    public Bird CreateBird(String name,String species){
+        return new Bird(name,species);
+    }
 
-public Mammal CreateMammal(String name, String species){
-    return new Mammal(name,species);
-}
+    public Mammal CreateMammal(String name, String species){
+        return new Mammal(name,species);
+    }
 
-public Enclosure CreateEnclosure(String name){
-    return new Enclosure(name);
-}
+    public Enclosure CreateEnclosure(String name){
+        return new Enclosure(name);
+    }
 
 
     @Override
     public void MakeAllAnimalsEats() {
-    bird.eat();
-    mammal.eat();
+        bird.eat();
+        mammal.eat();
     }
 }

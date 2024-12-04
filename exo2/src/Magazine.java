@@ -1,12 +1,12 @@
 public class Magazine extends LibraryItem {
 
-private int IssueNumber;
+    private int IssueNumber;
 
 
-public Magazine(int id, String title, int publicationYear, int issueNumber) {
-    super(id, title, publicationYear);
-    this.IssueNumber = issueNumber;
-}
+    public Magazine(int id, String title, int publicationYear, int issueNumber) {
+        super(id, title, publicationYear);
+        this.IssueNumber = issueNumber;
+    }
 
 
 

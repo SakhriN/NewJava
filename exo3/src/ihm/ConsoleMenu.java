@@ -10,13 +10,10 @@ public class ConsoleMenu {
     private int choice=10;
     private List<Enclosure> enclosures;
 
-
     public void main(){
 
         Scanner scanner = new Scanner(System.in);
         ZooManager manager = new ZooManager();
-
-
 
         while(choice!=0){
             System.out.println("1. Créer un mammifère");
@@ -31,38 +28,31 @@ public class ConsoleMenu {
                     createBird(scanner, manager);
                     break;
 
-                    case 2:
-                        createMammal(scanner, manager);
-                        break;
+                case 2:
+                    createMammal(scanner, manager);
+                    break;
 
                 case 3:
-createEnclosure(scanner, manager);
+                    createEnclosure(scanner, manager);
                     break;
 
                 case 4:
-SeeAnimalsFromEnclosure(scanner);
-
+                    SeeAnimalsFromEnclosure(scanner);
                     break;
 
-                        case 0:
-                            System.out.println("Bonne journée.");
-                            break;
+                case 5:
+                    SeeAnimalsFromEnclosure(scanner);
+                    break;
 
+                case 0:
+                    System.out.println("Bonne journée.");
+                    break;
 
-                            default:
-                                System.out.println("Commande incorrecte.");
-                                break;
-
+                default:
+                    System.out.println("Commande incorrecte.");
+                    break;
             }
-
         }
-
-
-
-
-
-
-
     }
 
     private void createBird(Scanner scanner, ZooManager manager) {
@@ -145,7 +135,6 @@ SeeAnimalsFromEnclosure(scanner);
         }
 
     }
-
 
 
 
