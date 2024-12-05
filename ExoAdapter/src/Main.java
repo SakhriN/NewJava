@@ -3,16 +3,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        double amount = 100;
+        double amount;
         CurrencyConverter currencyConverter = new CurrencyConverter();
-        //Utilisation de mon adaptateur
         CurrencyAdapter currencyAdapter = new CurrencyAdapterConverter(currencyConverter);
 
-        System.out.println("La monnaie de base est de " + amount + " euros, nous allorns le transformer en GBP.");
+        amount = 100;
+        System.out.println("La monnaie de base est de " + amount + " euros, nous allons le transformer en GBP.");
         amount = currencyAdapter.convertToCurrency("EUR","GBP",amount);
         System.out.println("\n La monnaie est transformée en "+ amount + " GBP.");
 
+        amount = 100;
         amount = currencyAdapter.convertToCurrency("EUR","USD",amount);
+        System.out.println("\n La monnaie est transformée en "+ amount + " USD.");
+
+        amount = 60;
+        amount = currencyAdapter.convertToCurrency("GBP","USD",amount);
         System.out.println("\n La monnaie est transformée en "+ amount + " USD.");
 
     }
