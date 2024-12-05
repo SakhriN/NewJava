@@ -14,9 +14,15 @@ public void removeObservateur(Observateur observateur) {
     observateurs.remove(observateur);
 }
 
+public void listObservateurs() {
+    for (Observateur observateur : observateurs) {
+        System.out.println(observateur);
+    }
+}
+
 public void notifyObservers(String message) {
     for (Observateur observateur : observateurs) {
-        observateur.update(message);
+        observateur.react(message);
     }
 }
 

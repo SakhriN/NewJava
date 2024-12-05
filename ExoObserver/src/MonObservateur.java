@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class MonObservateur implements Observateur {
 
 private String name;
@@ -7,7 +9,7 @@ public MonObservateur(String name) {
 }
 
     @Override
-    public void update(String message) {
+    public void react(String message) {
     int random = (int) (Math.random() * 10);
     switch (random) {
         case 1->{
@@ -41,7 +43,6 @@ public MonObservateur(String name) {
             System.out.println(this.name + " trouve que l'événement suivant pue la merde : " + message);
         }
     }
-
 
     }
 }

@@ -1,4 +1,6 @@
+import java.util.List;
+
 public interface Observateur {
 
-public void update(String message);
+public void react(String message);
 }
