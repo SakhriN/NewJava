@@ -57,7 +57,7 @@ public class Cat implements Animal{
                 System.out.println("Le chat en est mort.");
             }
             case 2->{
-                System.out.println("Le chat a porté disparu suite a sa dernière action.");
+                System.out.println("Le chat est porté disparu suite a sa dernière action.");
             }
             case 3->{
                 System.out.println("Le chat a été piqué.");

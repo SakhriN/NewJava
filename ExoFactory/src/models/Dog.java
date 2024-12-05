@@ -14,7 +14,7 @@ public class Dog implements Animal{
             }
             case 1->{
                 System.out.println("Waf");
-            }   
+            }
             default -> {
                 System.out.println("Wof, Wof Wof !!!");
             }
@@ -56,7 +56,7 @@ public class Dog implements Animal{
                 System.out.println("Le chien en est mort.");
             }
             case 2->{
-                System.out.println("Le chien a porté disparu suite a sa dernière action.");
+                System.out.println("Le chien est porté disparu suite a sa dernière action.");
             }
             case 3->{
                 System.out.println("Le chien a été piqué.");
