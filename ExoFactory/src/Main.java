@@ -11,12 +11,13 @@ public class Main {
         Animal cat = catFactory.createAnimal();
         cat.makeSound();
         cat.takeAShit();
+        cat.IsAlive();
 
 
         AnimalFactory dogFactory = new DogFactory();
         Animal dog = dogFactory.createAnimal();
         dog.makeSound();
         dog.takeAShit();
-
+        dog.IsAlive();
     }
 }
