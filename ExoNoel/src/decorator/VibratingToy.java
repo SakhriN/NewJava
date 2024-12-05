@@ -1,12 +1,18 @@
 package decorator;
 
+import factory.Toy;
+
 public class VibratingToy extends ToyDecorator{
 
-    public VibratingToy(Toyy toy) {
+    public VibratingToy(Toy toy) {
         super(toy);
     }
 
-public String getDescription() {
+    @Override
+    public void plays() {
+    }
+
+    public String getDescription() {
         return super.getDescription() + ", jouet vibrant tel un homme en colère qui tappe dans tous les sens.";
 }
 }

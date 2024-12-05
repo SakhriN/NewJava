@@ -2,10 +2,10 @@ package decorator;
 
 import factory.Toy;
 
-public abstract class ToyDecorator implements Toyy {
-    private Toyy toy;
+public abstract class ToyDecorator implements Toy {
+    protected Toy toy;
 
-    public ToyDecorator(Toyy toy) {
+    public ToyDecorator(Toy toy) {
         this.toy = toy;
     }
     public String getDescription(){
