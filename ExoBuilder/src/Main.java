@@ -7,7 +7,7 @@ public class Main {
         basiqueMaisonBuilder.setNumberFloor(125);
         basiqueMaisonBuilder.setTypeRoof("Nylon acheté il y'a 17 ans");
         basiqueMaisonBuilder.setHasPool(false);
-basiqueMaisonBuilder.setSquatteurs((int)(Math.round(Math.random()*5)));
+        basiqueMaisonBuilder.setSquatteurs((int)(Math.round(Math.random()*5)));
         Maison maison = basiqueMaisonBuilder.build();
         System.out.println(maison.toString());
     }
