@@ -17,7 +17,7 @@ public class Main {
         Toy jouet = new PlainToy();
         jouet.getDescription();
         Toy jouetIllumine = new GlowingToy(jouet);
-        System.out.println("Description d'une figurine LED : "
+        System.out.println("Description d'une figurine LED : \n"
                 + jouetIllumine.getDescription());
         Toy jouetVibrant = new VibratingToy(jouetIllumine);
 
